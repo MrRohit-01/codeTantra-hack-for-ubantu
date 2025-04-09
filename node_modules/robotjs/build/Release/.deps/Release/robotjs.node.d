@@ -1,0 +1,1 @@
+cmd_Release/robotjs.node := ln -f "Release/obj.target/robotjs.node" "Release/robotjs.node" 2>/dev/null || (rm -rf "Release/robotjs.node" && cp -af "Release/obj.target/robotjs.node" "Release/robotjs.node")

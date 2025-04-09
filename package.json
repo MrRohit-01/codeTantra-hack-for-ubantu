@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "node-global-key-listener": "^0.3.0",
+    "robotjs": "^0.6.0"
+  }
+}
