@@ -1,10 +1,10 @@
-import keyboard
+from pynput import keyboard
 import subprocess
 
 is_typing = False
 node_process = None
 
-def toggle_typing():
+def on_activate():
     global is_typing, node_process
     if is_typing:
         if node_process:
@@ -16,8 +16,11 @@ def toggle_typing():
         print("⏳ Typing started...")
         is_typing = True
 
-# Use Ctrl+Shift+T as start/stop
-keyboard.add_hotkey('ctrl+shift+t', toggle_typing)
+# Changed hotkey to backtick (`) key
+hotkey = keyboard.GlobalHotKeys({
+    '`': on_activate
+})
 
-print("✅ Global listener running. Press Ctrl+Shift+T to start/stop typing.")
-keyboard.wait()  # Keeps the script running
+print("✅ Global listener running. Press ` (backtick) to start/stop typing.")
+hotkey.start()
+hotkey.join()

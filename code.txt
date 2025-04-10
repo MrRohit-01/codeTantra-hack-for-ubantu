@@ -8,7 +8,6 @@ def insertion_sort(n, arr):
         arr[j + 1] = key
     print(*arr, end=".")
 
-# Input
 n = int(input().strip())
 arr = list(map(int, input().strip().split()))
 
