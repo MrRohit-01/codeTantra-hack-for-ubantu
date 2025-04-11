@@ -1,8 +1,13 @@
 {
   "type": "module",
   "dependencies": {
+    "@google/generative-ai": "^0.24.0",
     "@nut-tree-fork/nut-js": "^4.2.6",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2",
     "node-global-key-listener": "^0.3.0",
-    "robotjs": "^0.6.0"
+    "openai": "^4.93.0",
+    "robotjs": "^0.6.0",
+    "puppeteer": "^22.4.0"
   }
 }

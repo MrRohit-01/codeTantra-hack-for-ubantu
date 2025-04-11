@@ -1,0 +1,12 @@
+Question Code: 3.3.5
+
+Mrite a program to print a pattern of *(stars) separated by spaces fo!
+
+Input Format:
+
+a single line of input contains a positive integer representing the no.<
+:
+
+For more clarity refer the visible test cases.
+
+Instruction: To run your custom test cases strictly map your input ai

@@ -1,0 +1,27 @@
+Question Code: 9.1.9
+
+Evaluation of postfix expression is a problem that is related to §
+For example consider a postfix Expression: 8 43* +5/2-
++ First operation to be computed is 4*3 = 12.
++ Then 12 sums with 8 and gives us intermediate result 20.
++ Then 20 will be divided by 5 and give us intermediate result 4
++ At the end after subtracting 2 with 4 we get the final result 2.
+Working of the algorithm step by step to evaluate postfix expre:
+Note: The postfix expression to be evaluated is treated as a string, '
+Step 1:
+Traverse the string from 0 index to last index (length - 1 = 8). At ind
+stack. Similarly, at index 1 and 2, we get 4 and 3 respectively which
+Whenever we found any operand we push it on the stack, this is our
+Status of stack is:
+13]
+141
+18]
+Operand 3 is on the top.
+Step 2:
+Continue traversal in the string and at index 3, we will get an operat
+operands from the stack (3 and 4) and compute the operation ' * * be
+4*3=12 and push the computed result back to stack.
+After this status of stack is:
+[12]
+18]
+Now operand 12 is on the top.

@@ -1,0 +1,36 @@
+Question Code: 3.3.4
+
+Extraordinary numbers are numbers whose only prime factors are 2,
+'A sample series of extraordinary numbers looks like: 1,2,3,4,5.6,8,9,
+You have to find the Nth extraordinary number.
+
+Note: 1 by default is added as a base number to the series
+Input Format:
+
+First line input contains an integer T denoting the size of the array
+Second line of input contains an integer array arr] of T no. of elem
+Output Format:
+
+Nth extraordinary numbers for each N value stored in Input array.
+Constraints to be followed:
+
+1sTs 10000
+
+1s Input{i] < 10000
+
+Sample test case is:
+
+Input:
+
+2 104
+
+Output:
+
+12 4
+
+Brief editorial:
+
+For Input{0] N value is 10 and 10th extraordinary number in the serie
+For more clarity refer the visible test cases.
+
+Instruction: To run your custom test cases strictly map your input ai

@@ -1,0 +1,43 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```c\n#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n\nint main() {\n    char p[101], q[101];\n    scanf(\"%s %s\", p, q);\n    int m = strlen(p);\n    int n = strlen(q);\n    int dp[m + 1][n + 1];\n\n    for (int i = 0; i <= m; i++) {\n        for (int j = 0; j <= n; j++) {\n            if (i == 0)\n                dp[i][j] = j;\n            else if (j == 0)\n                dp[i][j] = i;\n            else if (p[i - 1] == q[j - 1])\n                dp[i][j] = dp[i - 1][j - 1] + 1;\n            else\n                dp[i][j] = 1 + (dp[i - 1][j] < dp[i][j - 1] ? dp[i - 1][j] : dp[i][j - 1]);\n        }\n    }\n\n    printf(\"%d\\n\", dp[m][n]);\n    return 0;\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "citationMetadata": {
+        "citationSources": [
+          {
+            "startIndex": 179,
+            "endIndex": 473,
+            "uri": "https://github.com/Padmavathi99/Competitive-programming"
+          }
+        ]
+      },
+      "avgLogprobs": -0.017078850720379804
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 208,
+    "candidatesTokenCount": 296,
+    "totalTokenCount": 504,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 208
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 296
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash"
+}

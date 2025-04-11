@@ -1,0 +1,14 @@
+Question Code: 3.3.7
+
+Robert is playing with words when he encounters a problem posed t lengths m and n, respectively. Robert's task is to find the length of t Note: P and Q can contain both uppercase and lowercase letters a Input Format:
+The first line contains the string P.
+The second line contains the string Q.
+Output Format:
+Asingle line containing the length of the shortest string that has bott Constraints:
++1 <= P.length(), Q.length() <= 100 'Sample Test Case 1:
+Input:
+Abed xyed Output:
+6 Editorial: The shortest common sequence would be "abxyed" whic 'Sample test case 2:
+Input:
+Efgh jghi Output:
+6

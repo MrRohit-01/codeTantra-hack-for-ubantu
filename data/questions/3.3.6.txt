@@ -1,0 +1,10 @@
+Question Code: 3.3.6
+
+3.3.6. Print the following pattern Mrite a program to print the following pattern Input Format:
+A single line of input contains a positive integer representing the no.
+Sample Input:
+7
+Output:
+1 232 34543 4567654 567898765 67891011109876
+78910 11 12 1312 1119987
+Instruction: To run your custom test cases strictly map your input ai
