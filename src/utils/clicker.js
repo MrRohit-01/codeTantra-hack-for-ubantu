@@ -35,7 +35,7 @@ export async function performClicksAfterTyping() {
 
     // Wait 2s before the last 2 clicks
     if (i === positions.after.length - 2 || i === positions.after.length - 1) {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 6000));
     }
   }
 }

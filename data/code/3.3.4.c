@@ -30,7 +30,7 @@ int main() {
     }
     for (int i = 0; i < t; i++) {
         printf("%d", findNthExtraordinary(arr[i]));
-        if(i < t - 1){
+        if(i < t){
             printf(" ");
         }
     }
